@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/toastBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/toastBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/numberBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/numberBtn"
+            android:textColor="@color/purple_500"
+            android:textSize="72sp"
+            app:backgroundTint="?attr/colorSecondaryVariant"
+            app:iconTint="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/countUpBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toastBtn" />
+
+        <Button
+            android:id="@+id/countUpBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/countUpBtn"
+            app:layout_constraintBottom_toTopOf="@+id/countDownBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/countDownBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/countDownBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
